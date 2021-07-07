@@ -1,0 +1,13 @@
+package com.myspace.caleb;
+
+import java.lang.Number;
+
+rule "err"
+	dialect "mvel"
+	when
+		entrada( entrance == "hola" )
+	then
+		salida fact0 = new salida();
+		fact0.setReponse( "chau" );
+		insert( fact0 );
+end
